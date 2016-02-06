@@ -6,8 +6,17 @@ export default class Profile extends Component{
    }
 
    render(){
+     const {
+       name,
+       url,
+       description
+     } = this.props;
+
      return (
-        <div>Profile</div>
+        <article>
+          <div><a href="{url}">{name}</a></div>
+          <div>{description}</div>
+        </article>
      );
    }
 
